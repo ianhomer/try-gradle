@@ -1,0 +1,12 @@
+# IDEA
+
+.idea/workspace.xml
+.idea/sonarlint
+
+# Maven
+
+target/
+
+# Gradle
+
+build/
