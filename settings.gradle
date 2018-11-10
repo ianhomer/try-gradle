@@ -1,0 +1,4 @@
+rootProject.name = 'try-gradle'
+include ':my-core'
+
+project(':my-core').projectDir = "$rootDir/my-core" as File
