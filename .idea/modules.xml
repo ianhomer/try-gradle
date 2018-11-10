@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/my-core/my-core.iml" filepath="$PROJECT_DIR$/my-core/my-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/my-core/my-core.iml" filepath="$PROJECT_DIR$/.idea/modules/my-core/my-core.iml" group="my-core" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/my-core/my-core_main.iml" filepath="$PROJECT_DIR$/.idea/modules/my-core/my-core_main.iml" group="my-core" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/my-core/my-core_test.iml" filepath="$PROJECT_DIR$/.idea/modules/my-core/my-core_test.iml" group="my-core" />
       <module fileurl="file://$PROJECT_DIR$/try-gradle.iml" filepath="$PROJECT_DIR$/try-gradle.iml" />
     </modules>
   </component>

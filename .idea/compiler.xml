@@ -11,7 +11,8 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="my-core" target="10" />
-      <module name="try-gradle" target="10" />
+      <module name="my-core_main" target="1.9" />
+      <module name="my-core_test" target="1.9" />
     </bytecodeTargetLevel>
   </component>
 </project>
