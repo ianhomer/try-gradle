@@ -23,6 +23,12 @@ allprojects  {
     }
   }
 
+  repositories {
+    mavenLocal()
+    maven { url "https://packagecloud.io/purplepip/releases/maven2" }
+    maven { url "http://repo.maven.apache.org/maven2" }
+  }
+
   task hello {
     doLast { task ->
       println "Hello, ${task.project.name}!"
@@ -46,23 +52,13 @@ subprojects {
   }
 
   test {
-    finalizedBy jacocoTestReport
+    finalizedBy jacocoTestReport, hello
   }
 
   spotless {
     java {
       googleJavaFormat()
     }
-  }
-
-  repositories {
-    mavenLocal()
-    maven { url "https://packagecloud.io/purplepip/releases/maven2" }
-    maven { url "http://repo.maven.apache.org/maven2" }
-  }
-
-  configurations.all {
-
   }
 
   hello {

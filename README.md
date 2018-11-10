@@ -12,10 +12,6 @@ Try gradle
 
 # Inspect what's going on
 
-Clean test with verbose output
-
-    ./gradlew clean test --console=verbose    
-
 Display project dependencies
 
     gradle my-core:dependencies
