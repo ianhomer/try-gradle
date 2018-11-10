@@ -1,11 +1,15 @@
 # try-gradle
 
-What's this?
+Try gradle
 
 # TL;DR
 
     ./gradlew test
     
+# Pre-requisites
+
+* Java 11
+
 # Inspect what's going on
 
 Clean test with verbose output

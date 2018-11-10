@@ -3,13 +3,14 @@ plugins {
   id "io.spring.dependency-management" version "1.0.6.RELEASE"
 }
 
+def _ = project.properties
+
 allprojects  {
   apply plugin: 'maven'
   apply plugin: 'io.spring.dependency-management'
 
   group = 'com.purplepip'
   version = '1.0.0-SNAPSHOT'
-  def _ = project.properties
 
   dependencyManagement {
     dependencies {
@@ -31,12 +32,21 @@ allprojects  {
 
 subprojects {
   apply plugin: 'java'
+  apply plugin: "jacoco"
   apply plugin: 'com.diffplug.gradle.spotless'
 
   sourceCompatibility = JavaVersion.VERSION_11
   targetCompatibility = JavaVersion.VERSION_11
   tasks.withType(JavaCompile) {
   	options.encoding = 'UTF-8'
+  }
+
+  jacoco {
+    toolVersion = _.'jacoco.version'
+  }
+
+  test {
+    finalizedBy jacocoTestReport
   }
 
   spotless {
