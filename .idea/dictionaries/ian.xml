@@ -2,6 +2,7 @@
   <dictionary name="ian">
     <words>
       <w>gradle</w>
+      <w>projectlombok</w>
     </words>
   </dictionary>
 </component>
