@@ -2,6 +2,12 @@ allprojects  {
   apply plugin: 'maven'
   group = 'com.purplepip'
   version = '1.0.0-SNAPSHOT'
+
+  task hello {
+    doLast { task ->
+      println "Hello, ${task.project.name}!"
+    }
+  }
 }
 
 subprojects {
@@ -21,4 +27,17 @@ subprojects {
   configurations.all {
 
   }
+
+  hello {
+    doLast { task ->
+      println "... subproject : ${task.project.name}"
+    }
+  }
 }
+
+task helloWorld {
+  doLast { task ->
+    println "Hello, World!"
+  }
+}
+helloWorld.dependsOn hello
