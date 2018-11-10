@@ -8,14 +8,15 @@ allprojects  {
   apply plugin: 'io.spring.dependency-management'
   group = 'com.purplepip'
   version = '1.0.0-SNAPSHOT'
+  def _ = project.properties
 
   dependencyManagement {
     dependencies {
       dependency 'ch.qos.logback:logback-classic:1.2.3'
-      dependency "org.projectlombok:lombok:${project.properties['lombok.version']}"
+      dependency "org.projectlombok:lombok:${_.'lombok.version'}"
       dependency 'org.slf4j:slf4j-api:1.7.25'
-      dependency "org.junit.jupiter:junit-jupiter-api:${project.properties['junit.version']}"
-      dependency "org.junit.jupiter:junit-jupiter-engine:${project.properties['junit.version']}"
+      dependency "org.junit.jupiter:junit-jupiter-api:${_.'junit.version'}"
+      dependency "org.junit.jupiter:junit-jupiter-engine:${_.'junit.version'}"
       dependency 'org.mockito:mockito-core:2.23.0'
     }
   }
