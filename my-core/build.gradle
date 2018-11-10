@@ -1,4 +1,4 @@
-description = 'purplepip archetype template core'
+description = 'purplepip try gradle my-core'
 
 dependencies {
   compile group: 'ch.qos.logback', name: 'logback-classic'
