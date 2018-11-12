@@ -4,7 +4,7 @@ Try gradle
 
 # TL;DR
 
-    ./gradlew test
+    ./gradlew build
     
 # Pre-requisites
 
