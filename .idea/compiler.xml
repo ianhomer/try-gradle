@@ -11,8 +11,8 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="my-core" target="10" />
-      <module name="my-core_main" target="11" />
-      <module name="my-core_test" target="11" />
+      <module name="my-core_main" target="1.8" />
+      <module name="my-core_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
