@@ -65,7 +65,7 @@ subprojects {
       showStandardStreams = true
     }
   }
-  
+
   spotless {
     java {
       googleJavaFormat()
