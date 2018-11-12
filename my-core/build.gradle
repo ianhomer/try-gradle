@@ -9,10 +9,3 @@ dependencies {
   testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-engine'
   testCompile group: 'org.mockito', name: 'mockito-core'
 }
-
-test {
-  useJUnitPlatform()
-  testLogging {
-    showStandardStreams = true
-  }
-}
